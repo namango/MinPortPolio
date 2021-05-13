@@ -7,10 +7,11 @@
   --color-light-purple: #ff79ff;
   --color-dark-purple: #aa00c7;
   --color-orange: #ffab40;
+  --color-dark-mint: #00cbcc;
   --color-mint: #64ffda;
 
   /* font-size */
-  --font-large: 48px;
+  --font-large: 50px;
   --font-mediume: 30px;
   --font-regular: 24px;
   --font-small: 18px;
@@ -50,6 +51,12 @@ ul {
   list-style: none;
   padding: 0;
   margin: 0;
+}
+
+button {
+  font-size: var(--font-small);
+  border: none;
+  background-color: white;
 }
 
 /* Typography */
@@ -119,4 +126,35 @@ p {
   color: white;
   border: 1px solid white;
   border-radius: var(--size-border-radius);
+}
+
+#home {
+  background: url(img/background-home.png);
+  padding: 50px;
+  padding-top: 120px;
+  display: flex;
+  align-items: center;
+  /* position: relative; */
+}
+
+.home__hello {
+  padding: 50px;
+  /* flex-basis: 70%; */
+}
+
+.contact-btn {
+  margin-top: 15px;
+  padding: 10px;
+  background-color: var(--color-dark-mint);
+  color: white;
+  border-radius: var(--size-border-radius);
+  border: 2px var(--color-mint) solid;
+}
+
+.home__avatar {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 6px 6px 2px 2px var(--color-light-grey);
 }
