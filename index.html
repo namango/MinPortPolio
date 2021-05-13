@@ -8,6 +8,7 @@
       src="https://kit.fontawesome.com/55a84d5ff3.js"
       crossorigin="anonymous"
     ></script>
+    <script src="main.js" defer></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;600;900&display=swap"
@@ -26,13 +27,15 @@
         <span>MIN</span>
       </div>
       <ul class="navbar__menu">
-        <li class="navbar__menu__item">Home</li>
-        <li class="navbar__menu__item">About me</li>
-        <li class="navbar__menu__item">My work</li>
-        <li class="navbar__menu__item">Contact</li>
+        <li class="navbar__menu__item" data-link="#home">Home</li>
+        <li class="navbar__menu__item" data-link="#about">About me</li>
+        <li class="navbar__menu__item" data-link="#mywork">My work</li>
+        <li class="navbar__menu__item" data-link="#contact">Contact</li>
       </ul>
+      <div class="navbar__toggle-btn"><i class="fas fa-bars"></i></div>
     </nav>
-
+    
+    
     <!-- Home -->
     <section id="home">
       <div class="section__container">
@@ -72,21 +75,21 @@
 
         <div class="majors">
           <div class="skills">
-            <div class="major">
+            <div class="major" data-iconName=".fa-html5">
               <div class="major__icon">
                 <i class="fab fa-html5"></i>
               </div>
               <h2 class="major__title">HTML</h2>
               <p class="major__description">html로 web 뼈대 구축</p>
             </div>
-            <div class="major">
+            <div class="major" data-iconname=".fa-css3-alt">
               <div class="major__icon">
                 <i class="fab fa-css3-alt"></i>
               </div>
               <h2 class="major__title">CSS</h2>
               <p class="major__description">web styling</p>
             </div>
-            <div class="major">
+            <div class="major" data-iconName=".fa-js">
               <div class="major__icon">
                 <i class="fab fa-js"></i>
               </div>
@@ -95,21 +98,21 @@
             </div>
           </div>
           <div class="strength">
-            <div class="major">
+            <div class="major" data-iconName=".fa-glasses">
               <div class="major__icon">
                 <i class="fas fa-glasses"></i>
               </div>
               <h2 class="major__title">꼼꼼함</h2>
               <p class="major__description">책임감에 <br />두 번 세 번 N번 확인</p>
             </div>
-            <div class="major">
+            <div class="major" data-iconName=".fa-grin-stars">
               <div class="major__icon">
                 <i class="fas fa-grin-stars"></i>
               </div>
               <h2 class="major__title">습득력</h2>
               <p class="major__description">관찰과 여러 시도를 <br />무한대로!</p>
             </div>
-            <div class="major">
+            <div class="major" data-iconName=".fa-comments">
               <div class="major__icon">
                 <i class="fas fa-comments"></i>
               </div>

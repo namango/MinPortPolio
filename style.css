@@ -149,6 +149,17 @@ p {
   border-radius: var(--size-border-radius);
 }
 
+.navbar__toggle-btn {
+  position: absolute;
+  top: 18px;
+  right: 15px;
+  font-size: var(--font-regular);
+  cursor: pointer;
+  display: none;
+}
+
+/* Home */
+
 #home {
   background: url(img/background-home.png);
 }
@@ -228,7 +239,7 @@ p {
 /* My Work */
 
 #mywork {
-  background: url(img/bgformywork.png);
+  background: center/cover url(img/bgformywork.png);
 }
 
 .mywork__side__menu {
@@ -301,7 +312,7 @@ p {
 .to-github:hover {
   font-size: var(--font-mediume);
   font-weight: var(--weight-semi-bold);
-  color: var(--color-orange);
+  color: var(--color-light-mint);
   transition: all var(--animation-duration) ease-out;
 }
 
@@ -343,9 +354,16 @@ p {
 }
 
 @media screen and (max-width: 768px) {
+  .nav__bar {
+    color: white;
+    display: block;
+    transition: all var(--animation-duration) ease;
+  }
+
   .navbar__menu {
+    text-align: center;
+    width: 100%;
     display: none;
-    top: 50%;
   }
 
   .navbar__logo {
@@ -362,6 +380,20 @@ p {
     order: 1;
   }
 
+  .navbar__toggle-btn {
+    display: block;
+  }
+
+  .open {
+    display: block;
+  }
+
+  .skills,
+  .strength {
+    flex-direction: column;
+    align-items: center;
+  }
+
   .mywork__side__menu {
     display: flex;
     flex-direction: column;
@@ -375,5 +407,9 @@ p {
   .mywork__projects {
     display: flex;
     flex-direction: column;
+  }
+
+  .project-alert {
+    left: 18%;
   }
 }
