@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/55a84d5ff3.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Minyoung's portpolio</title>
+  </head>
+  <body>
+    <!-- navBar -->
+    <nav class="nav__bar">
+      <div class="navbar__logo">
+        <i class="fas fa-cat"></i>
+        <sapn>MIN</sapn>
+      </div>
+      <ul class="navbar__menu">
+        <li class="navbar__menu__item">home</li>
+        <li class="navbar__menu__item">about me</li>
+        <li class="navbar__menu__item">mywork</li>
+        <li class="navbar__menu__item">contact</li>
+      </ul>
+    </nav>
+
+    <!-- Home -->
+    <section id="home">
+      <div class="hello">
+        <h1>
+          Hello! <br />
+          I'm Min
+        </h1>
+        <h2>Hard learning to be a junior <sapn>Front-End</sapn> Developer</h2>
+      </div>
+      <img src="img/min.JPG" alt="" />
+      <button class="contact-btn">contact me</button>
+    </section>
+
+    <!-- About me -->
+    <section id="about">
+      <h1>About Me</h1>
+      <h2>프론트엔드 개발자가 되기 위해 꾸준히 점진하는 나민영입니다!</h2>
+      <p>
+        비전공자로서 더 부족한 점이 많으리라 생각합니다. 바닐라 JS로 코어를 다진
+        후 React나 TypeScript도 공부하여 얼마나 작업하는 게 간편해지는지
+        느껴보고 싶습니다. 그리고 HTML Content를 불러오고 사용하면서 서버에
+        저장된 DATABASE는 어떻게 불러오고 사용하고 수정하고 삭제하는지에 대한
+        프로세스에 대한 실무 이해, 더 나아가 Node·js로 CRUD 또한 구현해보도록
+        꾸준히 정진할 계획입니다. 또 무엇을 만들고자 하는지 기획하고 실제로
+        어떻게 구현할 수 있는지 python과 JS로 구현 시 다른 점 등을 Sorucetree를
+        이용하여 github 레지스토리스에 실제 결과물을 하나씩 하나씩 쌓아갈 수
+        있도록 하겠습니다.
+      </p>
+      <div class="majors">
+        <div class="major">
+          <div class="major__icon">
+            <i class="fab fa-html5"></i>
+          </div>
+          <h2 class="major">HTML</h2>
+          <p class="major__description">html로 web 구축</p>
+        </div>
+        <div class="major">
+          <div class="major__icon">
+            <i class="fab fa-css3-alt"></i>
+          </div>
+          <h2 class="major">CSS</h2>
+          <p class="major__description">web styling</p>
+        </div>
+        <div class="major">
+          <div class="major__icon">
+            <i class="fab fa-js"></i>
+          </div>
+          <h2 class="major">바닐라 JS</h2>
+          <p class="major__description">responsive web 구현</p>
+        </div>
+        <div class="major">
+          <div class="major__icon">
+            <i class="fas fa-glasses"></i>
+          </div>
+          <h2 class="major">꼼꼼함</h2>
+          <p class="major__description">책임감에 두 번 세 번 N번 확인</p>
+        </div>
+        <div class="major">
+          <div class="major__icon">
+            <i class="fas fa-grin-stars"></i>
+          </div>
+          <h2 class="major">습득력</h2>
+          <p class="major__description">관찰과 여러 시도를 무한대로!</p>
+        </div>
+        <div class="major">
+          <div class="major__icon">
+            <i class="fas fa-comments"></i>
+          </div>
+          <h2 class="major">사교성</h2>
+          <p class="major__description">
+            여러 사람들과 협동하고 아이디어를 나누기 쌉가능~!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- My Work -->
+    <section id="mywork">
+      <h1>My Work</h1>
+      <h2>projects</h2>
+      <div class="mywork__side__menu">
+        <button class="mywork__side__menu-btn">
+          All<span class="mywork__count">3</span>
+        </button>
+        <button class="mywork__side__menu-btn">
+          JS계산기<span class="mywork__count">1</span>
+        </button>
+        <button class="mywork__side__menu-btn">
+          Python계산기<span class="mywork__count">1</span>
+        </button>
+        <button class="mywork__side__menu-btn">
+          Clone<span class="mywork__count">1</span>
+        </button>
+      </div>
+      <div class="mywork__projects">
+        <div class="project">
+          <img src="img/JS_Cal.png" class="project__img" alt="" />
+          <h2 class="project__name">계산기 with JS</h2>
+          <div class="to-github">to github<i class="fab fa-github"></i></div>
+        </div>
+        <div class="profect">
+          <img src="img/py_Cal.png" class="project__img" alt="" />
+          <h2 class="project__name">계산기 with Python</h2>
+          <div class="to-github">to github<i class="fab fa-github"></i></div>
+        </div>
+        <div class="profect">
+          <img src="img/clone.png" alt="" class="project__img" />
+          <div class="project__name">Clone portpolio</div>
+          <div class="to-github">to github<i class="fab fa-github"></i></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <h1 class="contact__title">Give me A shot!</h1>
+      <h3 class="contact__title">You won't regret!</h3>
+      <h2 class="contact__email">nmy9312@hanmail.net</h2>
+      <div class="contact__icons">
+        <a href="https://github.com/namango" target="_blank"
+          ><i class="fab fa-github"></i
+        ></a>
+        <a href="imgs/resume.pdf" target="_blank"
+          ><i class="fas fa-file"></i
+        ></a>
+      </div>
+    </section>
+  </body>
+</html>
