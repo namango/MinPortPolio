@@ -1,0 +1,122 @@
+:root {
+  /* color */
+  --color-black: #000000;
+  --color-light-grey: #7c7979;
+  --color-dark-grey: #4d4d4d;
+  --color-grey: #616161;
+  --color-light-purple: #ff79ff;
+  --color-dark-purple: #aa00c7;
+  --color-orange: #ffab40;
+  --color-mint: #64ffda;
+
+  /* font-size */
+  --font-large: 48px;
+  --font-mediume: 30px;
+  --font-regular: 24px;
+  --font-small: 18px;
+  --font-micro: 12px;
+
+  /* font weight */
+  --weight-bold: 700;
+  --weight-semi-bold: 600;
+  --weight-regular: 400;
+
+  /* Size */
+  --size-border-radius: 6px;
+
+  /* Animation */
+  --animation-duration: 300ms;
+}
+
+/* defalut */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Serif KR", serif;
+  margin: 0;
+  cursor: default;
+}
+
+a {
+  text-decoration: none;
+  font-size: var(--font-regular);
+  color: var(--color-dark-grey);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Typography */
+
+h1 {
+  font-size: var(--font-large);
+  font-weight: var(--weight-bold);
+  color: var(--color-black);
+  margin: 16px 0px; /* 위아래 양쪽 */
+}
+
+h2 {
+  font-size: var(--font-mediume);
+  font-weight: var(--weight-semi-bold);
+  color: var(--color-black);
+  margin: 8px 0px;
+}
+
+h3 {
+  font-size: var(--font-regular);
+  font-weight: var(--weight-regular);
+  color: var(--color-black);
+  margin: 4px;
+}
+
+p {
+  font-size: var(--font-small);
+  font-weight: var(--weight-regular);
+  color: var(--color-black);
+  margin: 2px;
+}
+
+/* Navbar */
+.nav__bar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 36px;
+  align-items: center;
+  font-size: var(--font-small);
+  background-color: var(--color-light-purple);
+}
+
+.navbar__menu {
+  display: flex;
+}
+
+.navbar__logo {
+  font-size: var(--font-regular);
+  font-weight: var(--weight-bold);
+}
+
+.navbar__logo i {
+  font-size: var(--font-mediume);
+}
+
+.navbar__menu__item {
+  padding: 10px;
+  margin: 5px;
+  font-weight: var(--weight-semi-bold);
+}
+
+.navbar__menu__item:hover {
+  background-color: var(--color-dark-purple);
+  color: white;
+  border: 1px solid white;
+  border-radius: var(--size-border-radius);
+}
