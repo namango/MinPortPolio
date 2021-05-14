@@ -89,3 +89,24 @@ projectBtn.addEventListener("click", (e) => {
     });
   }
 });
+
+// Button for project description
+const about = document.querySelector("#about");
+const aboutHeight = about.getBoundingClientRect().height;
+const projectAlertContainer = document.querySelector(".project-alert");
+const projectAlert = document.querySelector(".project-alert_btn");
+let count = 0;
+
+document.addEventListener("scroll", () => {
+  if (window.scrollY > aboutHeight) {
+    if (count > 0) return;
+    projectAlertContainer.classList.add("visible");
+  } else {
+    projectAlertContainer.classList.remove("visible");
+  }
+});
+
+projectAlert.addEventListener("click", () => {
+  projectAlertContainer.classList.remove("visible");
+  count++;
+});

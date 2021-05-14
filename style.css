@@ -348,6 +348,12 @@ p {
   position: fixed;
   bottom: 30px;
   left: 38%;
+  display: none;
+  transition: all var(--animation-duration) ease;
+}
+
+.visible {
+  display: block;
 }
 
 .project-alert span {
@@ -360,6 +366,13 @@ p {
 }
 
 @media screen and (max-width: 768px) {
+  :root {
+    --font-large: 30px;
+    --font-mediume: 24px;
+    --font-regular: 16px;
+    --font-small: 18px;
+    --font-micro: 10px;
+  }
   .nav__bar {
     color: white;
     display: block;
@@ -417,5 +430,10 @@ p {
 
   .project-alert {
     left: 18%;
+  }
+
+  .project-description img {
+    margin-top: 20px;
+    width: 100%;
   }
 }
