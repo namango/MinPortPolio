@@ -225,13 +225,11 @@ p {
 }
 
 .skills .major:hover i {
-  color: var(--color-chaining);
   transform: rotate(-30deg);
   transition: all var(--animation-duration) ease-in;
 }
 
 .strength .major:hover i {
-  color: var(--color-chaining);
   transform: rotate(30deg);
   transition: all var(--animation-duration) ease-out;
 }
@@ -303,6 +301,14 @@ p {
 
 .mywork__projects img {
   width: 240px;
+}
+
+.invisible {
+  display: none;
+}
+
+.project-description img {
+  width: 900px;
 }
 
 .project__active {

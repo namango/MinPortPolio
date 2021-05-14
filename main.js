@@ -53,3 +53,39 @@ majors.addEventListener("mouseover", (e) => {
       value.style.color = "navy";
   }
 });
+
+const projectBtn = document.querySelector(".mywork__side__menu");
+const projects = document.querySelectorAll(".project");
+
+projectBtn.addEventListener("click", (e) => {
+  const pname = e.target.dataset.pname || e.target.parentNode.dataset.pname;
+
+  if (pname == null) {
+    return;
+  }
+  projects.forEach((project) => {
+    const pdescription = project.querySelector(".project__active");
+    if (pname === "*") {
+      project_list();
+    } else if (pname == project.dataset.pcontent) {
+      project.classList.remove("invisible");
+      if (pdescription == null) {
+        return;
+      } else {
+        pdescription.classList.remove("project__active");
+      }
+    } else {
+      project.classList.add("invisible");
+    }
+  });
+
+  function project_list() {
+    projects.forEach((project) => {
+      const pdescription = project.querySelector(".project-description");
+      project.classList.remove("invisible");
+      if (pdescription != null) {
+        pdescription.classList.add("project__active");
+      }
+    });
+  }
+});

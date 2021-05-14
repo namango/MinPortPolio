@@ -132,21 +132,21 @@
         <h1>My Work</h1>
         <h2>projects</h2>
           <div class="mywork__side__menu">
-            <button class="mywork__side__menu-btn">All<span class="mywork__count">3</span></button>
-            <button class="mywork__side__menu-btn">
+            <button class="mywork__side__menu-btn" data-pname="*">All<span class="mywork__count">3</span></button>
+            <button class="mywork__side__menu-btn" data-pname="js">
             JS계산기<span class="mywork__count">1</span>
             </button>
-            <button class="mywork__side__menu-btn">
+            <button class="mywork__side__menu-btn" data-pname="py">
             Python계산기<span class="mywork__count">1</span>
             </button>
-            <button class="mywork__side__menu-btn">
+            <button class="mywork__side__menu-btn" data-pname="clone">
             Clone<span class="mywork__count">1</span>
             </button>
         </div>
             
           </div>
           <div class="mywork__projects">
-            <div class="project">
+            <div class="project" data-pcontent="js">
               <div class="img__container">
                 <img src="img/JS_Cal.png" class="project__img" alt="" />
               </div>
@@ -154,11 +154,11 @@
               <a href="https://github.com/namango/Calculator_JS" class="to-github"
               target="_blank">Go to github<i class="fab fa-github"></i
               ></a>
-              <div class="project__active">
+              <div class="project-description project__active">
                 <img src="img/JS-cal_description.jpg">
               </div>
             </div>
-            <div class="project">
+            <div class="project" data-pcontent="py">
               <div class="img__container">
                 <img src="img/py_Cal.png" class="project__img" alt="" />
               </div>
@@ -167,11 +167,11 @@
               <a href="https://github.com/namango/Calculator-with-Python" class="to-github"
                target="_blank" >Go to github<i class="fab fa-github"></i
               ></a>
-              <div class="project__active">
+              <div class="project-description project__active">
                 <img src="img/PY-cal_description.jpg">
               </div>
             </div>
-            <div class="project">
+            <div class="project" data-pcontent="clone">
               <div class="img__container">
                 <img src="img/clone.png" alt="" class="project__img" />
               </div>
